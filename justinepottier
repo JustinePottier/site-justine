@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Justine Pottier - Auteure</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      color: #1A2A40;
+      background: url('fondbeige.PNG') no-repeat center center fixed;
+      background-size: cover;
+    }
+.top-banner {
+  text-align: center; /* centre les images */
+  margin-top: 20px;
+}
+
+.top-banner img {
+  max-height: 200px; /* ou la taille que tu veux */
+  margin: 10px;       /* espace entre photo et logo */
+}
+
+.banner-text {
+  text-align: center;
+  color: #1A2A40;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .book {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .book img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .book h3 {
+      margin: 15px 0 5px 0;
+    }
+
+    .book p.price {
+      margin: 5px 0 10px 0;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #1A2A40;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #3c5a80;
+    }
+
+    .resume {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 40px;
+      background: #eaeaea;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1A2A40;
+    }
+
+    .socials a:hover {
+      text-decoration: underline;
+    }
+
+    .special-edition {
+      max-width: 400px;
+      margin: 40px auto;
+      text-align: center;
+      background: #fff8e1;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .special-edition img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .special-edition p.price {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bannière avec photo et logo -->
+  <div class="top-banner">
+    <img src="photo_moi.jpg" alt="Photo de Justine">
+    <img src="logo.png" alt="Logo Justine Pottier">
+  </div>
+
+  <!-- Texte principal -->
+  <div class="banner-text">
+    Vous êtes mes marchands de rêve
+  </div>
+
+  <!-- Section livres -->
+  <h2>Mes romans</h2>
+  <div class="books">
+
+    <!-- NIDA Tome 1 -->
+    <div class="book">
+      <img src="nia_1.webp" alt="Nous interdire d'aimer tome 1">
+      <h3>Nous interdire d'aimer - Tome 1</h3>
+      <p class="price">20€</p>
+      <button class="btn" onclick="toggleResume('resume1')">Voir le résumé</button>
+      <div id="resume1" class="resume">
+        <p>Élevée par sa grand-mère, Ariana a appris à vivre dans la bienveillance et la générosité. Seule ombre au tableau, l’homme qui partage sa vie n’est plus vraiment son âme sœur.<br><br>
+Ezra, lui, est un homme à femmes. Blessé, arrogant, fidèle en amitié et diablement sexy, il croise le regard d’Ariana lors d’une arrestation.<br><br>
+Après plusieurs rencontres explosives, le désir est bien trop fort pour être ignoré.<br><br>
+Entre doutes, trahisons et force des sentiments, leur confiance est mise à rude épreuve…<br>
+Leur interdira-t-il de s’aimer ?</p>
+      </div>
+    </div>
+
+    <!-- NIDA Tome 2 -->
+    <div class="book">
+      <img src="nia_2.webp" alt="Nous interdire d'aimer tome 2">
+      <h3>Nous interdire d'aimer - Tome 2</h3>
+      <p class="price">19€</p>
+      <button class="btn" onclick="toggleResume('resume2')">Voir le résumé</button>
+      <div id="resume2" class="resume">
+        <p>8 mois… 8 mois sans lui… 8 mois et une nouvelle famille…<br><br>
+Ariana doit se battre et affronter son passé, mais que lui réserve l’avenir ?<br><br>
+8 mois où tout a basculé… 8 mois à combler 6 ans perdus…<br><br>
+Ezra devra multiplier ses efforts afin de recouvrer sa mémoire. Lorsque son regard croise l’inconnue de l’hôpital, des sensations étranges le submergent.<br><br>
+Mais à force de jouer avec les fils du destin, ne perdront-ils pas tout ? Entre secrets et révélations, auront-ils enfin le droit de s’aimer ?</p>
+      </div>
+    </div>
+
+    <!-- Noël, ma famille et lui -->
+    <div class="book">
+      <img src="noel.webp" alt="Noël, ma famille et lui">
+      <h3>Noël, ma famille et lui</h3>
+      <p class="price">19€</p>
+      <button class="btn" onclick="toggleResume('resume3')">Voir le résumé</button>
+      <div id="resume3" class="resume">
+        <p>Elle est la poisse incarnée et j’aime la rendre folle.<br><br>
+Si seulement, elle était libre…<br><br>
+Il est imbuvable et pourtant, son “sourire fossette” me fait vibrer.<br><br>
+Si seulement, c’était possible… Mais à Noël, entourée de ma famille, tout peut arriver !<br><br>
+Entre mensonges, quiproquos et maladresses, réussiront-ils à le célébrer ?</p>
+      </div>
+    </div>
+
+    <!-- The Sound Sky : Valentine -->
+    <div class="book">
+      <img src="tss_valentine.webp" alt="The Sound Sky : Valentine">
+      <h3>The Sound Sky : Valentine</h3>
+      <p class="price">20€</p>
+      <button class="btn" onclick="toggleResume('resume4')">Voir le résumé</button>
+      <div id="resume4" class="resume">
+        <p>Accompagnée de sa guitare et de son sweat à capuche, Valentine cache un passé difficile.<br><br>
+Ancien membre du groupe The Sound Sky, Lorenzo tente de se remettre d’un événement douloureux.<br><br>
+Mais la musique rassemble les gens et une rencontre dans un lieu inattendu bousculera leur quotidien.<br><br>
+Au-delà de leur culpabilité, réussiront-ils à s’ouvrir pour s’aimer ?</p>
+      </div>
+    </div>
+
+    <!-- Ceux qui nous lient : la famille -->
+    <div class="book">
+      <img src="cqnl_famille.jpg" alt="Ceux qui nous lient : la famille">
+      <h3>Ceux qui nous lient : la famille</h3>
+      <p class="price">21€</p>
+      <button class="btn" onclick="toggleResume('resume5')">Voir le résumé</button>
+      <div id="resume5" class="resume">
+        <p>Claire et Liam n’ont rien en commun… jusqu’à Léonie.<br><br>
+Entre eux, l’attirance est électrique, mais également teintée d’amertume.<br><br>
+Liés sans le savoir, ils devront pourtant mettre de côté leurs différends pour affronter les ombres du passé.<br><br>
+Comment se relever quand tout s’effondre ? Comment aimer malgré les blessures ?</p>
+      </div>
+    </div>
+
+    <!-- Ceux qui nous lient : l'intrus -->
+    <div class="book">
+      <img src="cqnl_instrus.jpg" alt="Ceux qui nous lient : l'intrus">
+      <h3>Ceux qui nous lient : l'intrus</h3>
+      <p class="price">21€</p>
+      <button class="btn" onclick="toggleResume('resume6')">Voir le résumé</button>
+      <div id="resume6" class="resume">
+        <p>Il est son refuge. Elle est son interdiction.<br><br>
+Xander a toujours su où était sa place : protéger ceux qu’il aime sans jamais franchir la ligne. Mais avec Léonie, tout vacille.<br><br>
+Léonie tente de se reconstruire après le cauchemar qu’elle a vécu. Elle sourit pour ne pas sombrer, cache ses blessures derrière des éclats de rire.<br><br>
+Entre silences et regards brûlants, jusqu’où pourront-ils lutter contre l’évidence ?</p>
+      </div>
+    </div>
+
+    <!-- Le recueil interdit -->
+    <div class="book">
+      <img src="recueil.webp" alt="Le recueil interdit">
+      <h3>Le recueil interdit</h3>
+      <p class="price">25€</p>
+      <button class="btn" onclick="toggleResume('resume7')">Voir le résumé</button>
+      <div id="resume7" class="resume">
+        <p>Oubliez ce que vous connaissez !<br><br>
+Onze auteures vous font redécouvrir les contes et légendes de votre enfance…<br><br>
+Serez-vous prêt à y plonger ?</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Éditions reliées -->
+  <div class="special-edition">
+    <h3>Éditions reliées ultra limitées</h3>
+    <img src="cqnl_reliés.webp" alt="CQNL Reliés">
+    <p class="price">Duologie CQNL : 54€</p>
+    <p>Disponible uniquement en édition reliée et ultra limitée.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <h2>Me contacter</h2>
+    <p> Venez en MP sur mes réseaux pour toute question, et par mail si vous voulez passer commande.:</p>
+    <p><em>"Une commande m'intéresse"</em></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/justinepottier.auteure/" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/profile.php?id=100012297214034" target="_blank">Facebook</a>
+    </div>
+    <p>
+      <a href="mailto:justinepottier.commande@gmail.com" class="btn">Commander par mail</a>
+    </p>
+  </div>
+
+  <script>
+    function toggleResume(id) {
+      var resume = document.getElementById(id);
+      resume.style.display = resume.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
